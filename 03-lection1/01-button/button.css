@@ -1,10 +1,11 @@
 .button {
     border: none;
-    width: 189px;
+    min-width: 189px;
     height: 48px;
-    top: 139px;
-    left: 643px;
-    border-radius: 15px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -46,4 +47,5 @@
 .button:disabled {
     opacity: 0.5;
     cursor: default;
+    pointer-events: none;
 }
