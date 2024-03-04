@@ -1,4 +1,5 @@
-summary {        
+.accordion__summary {   
+  display: block;     
   color: #333;
   padding: 20px 20px;
   cursor: pointer;
@@ -8,9 +9,11 @@ summary {
   display: none;
 }
 
-
 .accordion__item {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
   margin-bottom: 8px;
+  border-radius: 8px;
 }
 
 
@@ -18,16 +21,12 @@ summary {
   margin-bottom: 0;
 }
 
-details {
-  margin-bottom: 10px;
-  max-width: 730px;
-  max-height: 304;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+.accordion__content {
+  padding: 0 15px 15px;
 }
 
-details > p {
-  padding: 10px;
-  max-width: 100%;
-  word-wrap: break-word;
+.accordion__text {
+  font-size: 16px;
+  line-height: 24px;
 }
+
