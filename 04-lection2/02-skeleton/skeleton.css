@@ -1,0 +1,45 @@
+.skeleton {
+    border: 1px solid #ACB5BD;
+    padding: 24px 40px 32px 24px;
+    border-radius: 8px;
+}
+
+.skeleton__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.skeleton__circle {
+    background: #DDE2E5;
+    flex-shrink: 0;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+}
+
+.skeleton__title {
+    flex-shrink: 1;
+    flex-basis: 100%;
+    margin-left: 16px;
+}
+
+.skeleton__rectangle {
+    background: #DDE2E5;
+    height: 20px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.skeleton__rectangle:last-child {
+    margin-bottom: 0;
+}
+
+.skeleton__rectangle_1 {
+    max-width: 172px;
+}
+
+.skeleton__rectangle_2 {
+    max-width: 257px;
+}
