@@ -36,10 +36,10 @@
     margin-bottom: 0;
 }
 
-.skeleton__rectangle_1 {
-    max-width: 172px;
+.skeleton__rectangle_small {
+    max-width: 33%;
 }
 
-.skeleton__rectangle_2 {
-    max-width: 257px;
+.skeleton__rectangle_large {
+    max-width: 50%;
 }
