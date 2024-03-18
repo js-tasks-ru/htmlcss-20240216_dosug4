@@ -1,0 +1,77 @@
+.toggle {
+    display: block;
+    position: relative;
+}
+
+.toggle__label {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #495057;
+}
+
+.toggle__icon {
+    width: 24px;
+    height: 24px;
+    top: calc(50% - 24px/2);
+    background: #DDE2E5;
+    border-radius: 16px;
+    margin-left: 1px;
+}
+
+
+.toggle__state {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.toggle__control {
+    position: relative;
+    width: 52px;
+    height: 28px;
+    border-radius: 16px;   
+    border: 1px solid #DDE2E5; 
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.toggle__input {
+    position: absolute;
+    left: -100vw;
+    opacity: 0;
+}
+
+.toggle__input:checked ~ .toggle__state
+.toggle__control {
+    border-color: #4263EB;
+    background: #4263EB;
+}
+
+.toggle__input:checked ~ .toggle__state
+.toggle__icon {
+    margin-left: 25px;
+    background: #FFFFFF;
+}
+
+.toggle__input:disabled ~ .toggle__state
+.toggle__control {
+    background: #DDE2E5;
+}
+
+.toggle__input:disabled ~ .toggle__state
+.toggle__icon {
+    opacity: 25%;
+    background: #ACB5BD;
+}
+
+.toggle__input:disabled ~ .toggle__state {
+    cursor: default;
+}
