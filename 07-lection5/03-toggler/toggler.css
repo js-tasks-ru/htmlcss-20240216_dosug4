@@ -75,3 +75,8 @@
 .toggle__input:disabled ~ .toggle__state {
     cursor: default;
 }
+
+.toggle__input:focus ~ .toggle__state
+.toggle__label {
+    text-decoration: underline ;
+}
