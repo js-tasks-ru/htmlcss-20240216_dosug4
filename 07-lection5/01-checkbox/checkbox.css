@@ -1,13 +1,11 @@
 .checkbox {
     display: block;
     position: relative;
-    margin-bottom: 16px;
 }
 
 .checkbox__control {
     width: 28px;
     height: 28px;
-    border: 1;
     border: 1px solid rgba(221, 226, 229, 1);
     background: #FFFFFF;
     border-radius: 4px;
@@ -21,6 +19,7 @@
     gap: 12px;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 16px;
 }
 
 .checkbox__label {
@@ -32,10 +31,6 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    width: 55px;
-    height: 24px;
-    top: 4px;
-    left: 40px;
 }
 
 .checkbox__input {
@@ -65,4 +60,9 @@
 .checkbox__input:disabled ~ .checkbox__state 
 .checkbox__icon {
     stroke: #DDE2E5;
+}
+
+.checkbox__input:disabled ~ .checkbox__state 
+.checkbox__control {
+    background-color: #DDE2E5;
 }
